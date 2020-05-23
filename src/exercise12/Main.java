@@ -23,7 +23,7 @@ public class Main {
      * Checks whether a given tree is complete.
      *
      * @param root root of the tree to be checked
-     * @param <T>
+     * @param <T> type of the content of the tree
      * @return whether or not the tree is complete
      */
     public static <T extends Comparable<T>> boolean isComplete(BinarySearchTree<T> root) {
@@ -35,10 +35,10 @@ public class Main {
     /**
      * Internal method overloading the public method. Checks whether a given tree is complete.
      *
-     * @param root        root of the tree to be checked
-     * @param index       index of the node to start with, default given by the overloading method is 0
+     * @param root root of the tree to be checked
+     * @param index index of the node to start with, default given by the overloading method is 0
      * @param numberNodes number of nodes to check, default given by the overloading method is {@code root.size()}
-     * @param <T>
+     * @param <T> type of the content of the tree
      * @return whether or not the tree is complete
      */
     private static <T extends Comparable<T>> boolean isComplete(BinarySearchTree<T> root, int index, int numberNodes) {
