@@ -21,20 +21,6 @@ public class Main {
 
     }
 
-    /**
-     * @param sortingOption A String read in
-     * @return TreeSet using the chosen order
-     */
-    private static TreeSet<Passenger> getSortingOption(SortingOption sortingOption) {
-        if (sortingOption.equals(SortingOption.AGE)) {
-            System.out.println("Sorting by " + sortingOption.getName());
-            return new TreeSet<>(new AgeComparator());
-        } else {
-            System.out.println("Sorting by " + sortingOption.getName());
-            return new TreeSet<>(sortingOption.getComparator());
-        }
-    }
-
     public static void main(String[] args) {
         Passenger p1 = new Passenger("Max", 23);
         Passenger p2 = new Passenger("Moritz", 24);
