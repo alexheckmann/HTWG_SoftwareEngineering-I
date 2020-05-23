@@ -1,4 +1,4 @@
-package build.pattern;
+package builder.pattern;
 
 public class Main {
 
