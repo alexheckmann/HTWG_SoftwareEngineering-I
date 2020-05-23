@@ -3,15 +3,15 @@ package collections.examples.comparator;
 import java.util.Comparator;
 
 public enum SortingOption {
-    Age("Age") {
+    AGE("Age") {
         @Override
-        Comparator getComparator() {
+        Comparator<Passenger> getComparator() {
             return new AgeComparator();
         }
     },
-    Name("Name") {
+    NAME("Name") {
         @Override
-        Comparator getComparator() {
+        Comparator<Passenger> getComparator() {
             return new NameComparator();
         }
     };
@@ -26,5 +26,5 @@ public enum SortingOption {
             return this.name;
         }
 
-        abstract Comparator getComparator();
+        abstract Comparator<Passenger> getComparator();
     }
